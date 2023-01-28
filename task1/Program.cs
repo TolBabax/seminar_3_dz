@@ -6,7 +6,7 @@
 
 System.Console.WriteLine("Напишите 5 значное число: ");
 string? number = Console.ReadLine();
-char[] str = new char[number.Length];
+char[] str = new char[number!.Length];
 if(number.Length == 5)
 {
     if(number[0] == number[4] && number[1] == number[3])
